@@ -1,0 +1,76 @@
+.md-radio{
+  font-size: 16px;
+  font-family: "Manrope-Regular";
+  .md-radio-label{
+    padding-left: 10px;
+    // color: #aaa;
+
+    font-weight: 400;
+    width: 100%;
+  }
+
+  .md-radio-container{
+    border: 1px solid rgba(0,0,0,.54) !important;
+    width: 15px;
+    min-width: 15px;
+    height: 15px;
+    top: 0px !important;
+    transition: .2s !important;
+
+    &:after{
+      transform: scale3D(0,0,0);
+      transition: .2s !important;
+      right: 2px;
+      bottom: 2px;
+      top: 2px;
+      left: 2px;
+      border-radius: 100%;
+    }
+
+    .md-ripple{
+      overflow: hidden;
+
+      .md-ripple-wave{
+        background-color: $brand-primary;
+      }
+    }
+  }
+
+  &.md-checked .md-radio-container{
+    border-color: $brand-primary !important;
+
+    &:after{
+      background-color: $brand-primary !important;
+    }
+  }
+  &.md-checked {
+    .md-radio-label{
+      font-weight: bold;
+    }
+  }
+  &.md-theme-default.md-purple  .md-radio-container{
+    border-color: $vendorColor !important;
+  }
+  &.md-theme-default.md-purple.md-checked  .md-radio-container{
+    border-color: $vendorColor !important;
+    &:after {
+        background-color: $vendorColor !important;
+    }
+  }
+
+  &.md-disabled .md-radio-label,
+  &.md-disabled .md-radio-container{
+    opacity: .26;
+    border-color: rgba(0, 0, 0, .54) !important;
+  }
+
+  &.md-checked.md-disabled .md-radio-container{
+    background-color: transparent !important;
+    border-color: rgba(0, 0, 0, .54) !important;
+    opacity: .26;
+
+    &:after{
+      background-color: rgba(0, 0, 0, .54) !important;
+    }
+  }
+}

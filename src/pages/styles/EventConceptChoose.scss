@@ -1,0 +1,57 @@
+.event-concept-section {
+    .concept-content {
+        width: 100%;
+        overflow: hidden;
+        .selected-concept-footer {
+            background: #fff;
+            padding: 30px 60px;
+            .concept-saved {
+                color: #3c4858;
+                padding: 12px 30px;
+                font-family: "Manrope-ExtraBold";
+                display: inline-block;
+            }
+            .separate {
+                &:before {
+                    content: " ";
+                    position: absolute;
+                    margin-top: 10px;
+                    height: 30px;
+                    width: 1px;
+                    background: #b7b7b7;
+                }
+            }
+        }
+    }
+    .concept-details {
+        .concept-name {
+            text-transform: capitalize;
+        }
+        .features-list {
+            margin-left: 30px;
+            margin-right: 60px;
+            li {
+                margin-bottom: 5px;
+            }
+        }
+    }
+    .concept-actions {
+        position: fixed;
+        bottom: 0px;
+        width: calc(100vw - 487px);
+        left: 487px;
+        z-index: 9999999;
+        height: 80px;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 30px 10px 40px;
+    }
+    .concept-compete-link {
+        text-decoration: underline;
+        &:visited {
+            color: #f51355;
+        }
+    }
+}

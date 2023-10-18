@@ -1,0 +1,10 @@
+// User select
+// For selecting text on the page
+
+@mixin display-flex($direction,$justify,$align) {
+  display  : flex;
+    flex : 1;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items : $align;
+}

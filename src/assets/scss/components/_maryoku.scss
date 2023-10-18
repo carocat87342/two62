@@ -1,0 +1,284 @@
+.header-actions {
+      .md-button {
+          width: 38px;
+          height: 38px;
+          box-shadow: 0 3px 17px 0 rgba(0, 0, 0, 0.15);
+          background-color: #ffffff !important;
+          border-radius: 50%;
+          display: inline-block;
+          text-align: center;
+          color: #000 !important;
+          box-sizing: border-box;
+
+          &:hover, &:focus {
+              background-color: #ffffff !important;
+              box-shadow: 0 3px 17px 0 rgba(0, 0, 0, 0.15);
+              background-color: #ffffff;
+          }
+
+          &.active {
+              background-color: #ffc001 !important;
+
+              &:hover, &:focus {
+                  background-color: #ffc001 !important;
+                  box-shadow: 0 3px 17px 0 rgba(0, 0, 0, 0.15);
+                  background-color: #ffc001;
+              }
+          }
+
+          .md-ripple {
+              padding: 10px !important;
+              width: max-content;
+          }
+
+          img {
+              width: 18px;
+          }
+      }
+}
+
+.md-tooltip[x-placement="bottom"]:after {
+  top: -5px;
+  border-top: 0;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #FFEDBC;
+  border-left: 5px solid transparent;
+}
+
+.vue-input-tag-wrapper {
+  padding-left: 15px !important;
+  .new-tag {
+    box-shadow: none;
+    font-size: 16px !important;
+  }
+  .input-tag {
+    background-color: #ededed !important;
+    color: #050505 !important;
+    border: none !important;
+    font-size: 16px !important;
+    font-weight: 400;
+    margin-bottom: 8px;
+    margin-right: 4px;
+    padding: 10px 10px !important;
+    .remove {
+      margin-left: 10px;
+      color: #050505 !important;
+    }
+  }
+}
+
+.md-progress-bar {
+  height: 12px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  .md-progress-bar-fill {
+    border-radius: 10px;
+  }
+  &.md-theme-default.md-determinate.md-red .md-progress-bar-fill{
+    background-color: #f51355;
+  }
+}
+
+.card-section {
+  border-radius: 3px;
+  -webkit-box-shadow: 0 3px 41px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 3px 41px 0 rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+  margin-bottom: 1em;
+  .section-header {
+    padding: 20px 25px;
+    font-family: 'Manrope-Bold',sans-serif;
+    font-size: 22px;
+    color: #050505;
+    background: #fff !important;
+    text-align: left;
+    border-radius: 0;
+    &.with-border {
+      border-bottom: solid 2px #DBDBDB !important;
+    }
+  }
+}
+
+// Styles for wizard and pre-budget page
+.event-budget-flexibility, .event-flexibility {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  min-height: 300px;
+  .range-slider {
+    width: 500px !important;
+    max-width: 100%;
+  }
+  .slider-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slider {
+    background: transparent;
+    .range-slider-inner {
+      .range-slider-knob {
+        width: 34px;
+        height: 34px;
+        background: #f51355;
+        border: none;
+        z-index: 2;
+        &::before {
+          content: " ";
+          display: block;
+          width: 7px;
+          height: 7px;
+          border-radius: 50%;
+          margin-left: 50%;
+          margin-top: 50%;
+          transform: translate(-50%, -50%);
+          background: white;
+          box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.42);
+        }
+      }
+      .range-slider-rail {
+        background: #a0a0a0;
+      }
+      .range-slider-fill {
+        background: #f51355;
+      }
+      &::before {
+        content: " ";
+        display: block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin-left: 0%;
+        transform: translate(-50%, 2px);
+        background: #f51355;
+      }
+      &::after {
+          content: " ";
+          display: block;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          margin-left: 100%;
+          transform: translate(-50%, -13px);
+          background: #a0a0a0;
+        }
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .slider-wrapper {
+      padding: 10px;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       flex-wrap: wrap;
+       .range-slider {
+         order:3;
+       }
+       img {
+         width: 50px;
+       }
+     }
+  }
+}
+
+.wizard-footer {
+  display: flex;
+  min-height: 128px;
+  background: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  // position: absolute;
+  bottom: 0;
+  width: 100%;
+  .footer-actions {
+    white-space: nowrap;
+  }
+  .progress-bar {
+    min-width: 400px;
+    margin: 0px 20px;
+    background-color: #D8D8D8 !important;
+  }
+  @media screen and (max-width: 1400px) {
+    .progress-bar {
+      min-width: 80%;
+    }
+    .status-bar {
+      flex-grow: 1;
+      flex-direction: column;
+      .status-step, .status-description {
+        padding: 5px;
+      }
+    }
+  }
+  .status-bar {
+    display: flex;
+    align-items: center;
+  }
+  .status-description {
+    font-family: "Manrope-Bold";
+    white-space: nowrap;
+  }
+  .tool-tip {
+    position: absolute;
+    right: 150px;
+    width: 410px;
+    background: #ffedb7;
+    top: -50px;
+    padding: 15px 20px;
+    display: flex;
+    box-shadow: 0 2px 21px 0 rgba(0, 0, 0, 0.21);
+    border-radius: 5px;
+  }
+  .next-btn {
+    width: 150px;
+  }
+  @media screen and (max-width: 500px) {
+    .wizard-footer {
+      padding: 0 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+ .wizard-footer {
+   display: block;
+ }
+}
+@media screen and (max-width: 500px) {
+ .wizard-footer {
+   display: block;
+   padding: 10px 10px;
+   .md-maryoku {
+     width: 90px;
+   }
+ }
+}
+.types {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .type-card {
+    cursor: pointer;
+    padding: 20px 25px;
+    width: 200px;
+    height: 200px;
+    border: solid 1px #cccccc;
+    border-radius: 3px;
+    margin: 10px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    &.selected {
+      color: #f51355;
+      box-shadow: 0 3px 10px 0 rgba(245, 19, 85, 0.43);
+      border: solid 0.5px #f51355;
+      font-family: "Manrope-Bold";
+    }
+    .md-checkbox-circle {
+      margin: 0px;
+    }
+  }
+}

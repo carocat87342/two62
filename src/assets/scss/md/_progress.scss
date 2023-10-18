@@ -1,0 +1,36 @@
+.md-progress-bar{
+  height: 4px;
+  margin-bottom: 20px;
+
+  &.md-accent {
+    background-color: #cbc8c8 !important;
+  }
+  &.md-rose{
+    @include md-progress-bar($brand-rose);
+  }
+  &.md-danger{
+    @include md-progress-bar($brand-danger);
+  }
+  &.md-primary{
+    @include md-progress-bar($brand-primary);
+  }
+  &.md-info{
+    @include md-progress-bar($brand-info);
+  }
+  &.md-success{
+    @include md-progress-bar($brand-success);
+  }
+  &.md-warning{
+    @include md-progress-bar($brand-warning);
+  }
+  &.md-thin {
+    height: 8px;
+    margin-bottom: 0;
+  }
+  &.md-theme-default.md-determinate.md-vendor{
+    background-color: #d5d5d5;
+  }
+  &.md-theme-default.md-determinate.md-vendor .md-progress-bar-fill{
+    background-color: $vendorColor;
+  }
+}

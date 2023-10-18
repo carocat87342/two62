@@ -1,0 +1,153 @@
+.swal2-container {
+  z-index: 100000;
+}
+.swal2-container .md-button{
+  padding: 12px 30px;
+  min-width: auto;
+  margin: 0 5px;
+}
+
+.swal2-actions{
+  margin-top: 26px !important;
+  -webkit-box-pack: end !important;
+  -ms-flex-pack: end !important;
+  justify-content: flex-start !important;
+  margin: 2em 0 0 !important;
+  flex-direction: row-reverse;
+}
+
+.swal2-popup{
+  justify-content: space-between !important;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif !important;
+  width: 860px !important;
+  min-height: 378px !important;
+
+  .swal2-title{
+    line-height: 40px !important;
+    margin: 0 !important;
+    font-size: 22px !important;
+  }
+
+  .swal2-actions{
+    margin-top: 26px !important;
+    -webkit-box-pack: end !important;
+    -ms-flex-pack: end !important;
+    justify-content: flex-start !important;
+    margin: 2em 0 0 !important;
+    flex-direction: row-reverse;
+  }
+}
+
+.swal2-icon{
+  width: 80px !important;
+  height: 80px !important;
+  margin: 20px auto 30px !important;
+  border: 4px solid transparent !important;
+}
+
+.swal2-icon.swal2-warning{
+  border-color: #facea8 !important;
+}
+
+.swal2-icon.swal2-info .swal2-icon-text, .swal2-icon.swal2-warning .swal2-icon-text{
+  font-size: 60px;
+line-height: 80px;
+text-align: center;
+}
+
+.swal2-content{
+  .md-input{
+    background: no-repeat bottom,50% calc(100% - 1px);
+    background-size: 0 100%,100% 100%;
+    border: 0;
+    height: 36px;
+    transition: background 0s ease-out;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0;
+    font-size: 14px;
+    background-image: linear-gradient(0deg,#9c27b0 2px,rgba(156,39,176,0) 0),linear-gradient(0deg,#d2d2d2 1px,hsla(0,0%,82%,0) 0);
+  }
+  font-size: 23px !important;
+
+  .md-input:focus{
+    background-size: 100% 100%, 100% 100% !important;
+    transition-duration: .3s !important;
+  }
+
+  .md-field.md-theme-default:after,
+  .md-field:not(.md-disabled):after{
+    background-color: transparent !important;
+  }
+}
+
+.swal2-icon.swal2-error {
+  border-color: #f27474 !important;
+}
+
+.swal2-warning .swal2-icon-text {
+  font-size: 30px !important;
+  line-height: 30px !important;
+  text-align: center !important;
+  display: flex;
+width: 30px !important;
+height: 30px !important;
+background: #ef4335;
+color: #fff;
+border-color: #fff;
+text-align: center;
+flex-direction: column;
+border: 2px solid #fff;
+border-radius: 50%;
+margin: auto;
+}
+
+.swal2-icon.swal2-animate-warning-icon {
+  display: flex;
+  width: 70px !important;
+  height: 70px !important;
+  border-radius: 12px !important;
+  background: #ef4335;
+  margin: 12px;
+  border-color: #fff !important;
+}
+
+.confirm-btn-bg {
+  background: #ef4335;
+}
+.cancel-btn-bg{ 
+  background: #05b14e;
+}
+
+.swal2-confirm.md-button.md-success {
+  font-family: "Manrope-ExtraBold";
+  font-size: 16px;
+  text-transform: none;
+  background: #f51355 !important;
+  &:hover {
+    background: #f51355 !important;
+  }
+  &.md-vendor {
+    background: #641856 !important;
+    &:hover {
+      background: #641856 !important;
+    }
+  }
+  &.md-purple {
+    background: #641856 !important;
+    &:hover {
+      background: #641856 !important;
+    }
+  }
+}
+.swal2-cancel.md-button.md-danger {
+  font-family: "Manrope-ExtraBold";
+  font-size: 16px;
+  text-transform: none;
+  color: #000000 !important;
+  box-shadow: none;
+  background: #ffffff !important;
+  &:hover {
+    background: #ffffff !important;
+  }
+}

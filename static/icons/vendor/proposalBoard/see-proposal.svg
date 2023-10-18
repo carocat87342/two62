@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26.371" height="18.461" viewBox="0 0 26.371 18.461">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="Path_1348" d="M685.188-492.792a1.98 1.98 0 0 1-1.978-1.978 1.98 1.98 0 0 1 1.978-1.978 1.98 1.98 0 0 1 1.978 1.978 1.98 1.98 0 0 1-1.978 1.978m0-6.593a4.62 4.62 0 0 0-4.615 4.615 4.62 4.62 0 0 0 4.615 4.615 4.62 4.62 0 0 0 4.615-4.615 4.62 4.62 0 0 0-4.615-4.615m.29 11.2c-5.678.132-9.382-4.725-10.611-6.6 1.353-2.116 4.76-6.449 10.032-6.584 5.655-.144 9.38 4.725 10.609 6.6-1.351 2.116-4.76 6.449-10.03 6.584m12.722-7.246c-.841-1.466-5.488-8.816-13.368-8.57-7.289.185-11.528 6.606-12.654 8.57a1.317 1.317 0 0 0 0 1.312c.829 1.447 5.313 8.574 13.043 8.574h.324c7.288-.186 11.528-6.606 12.654-8.57a1.323 1.323 0 0 0 0-1.312" class="cls-1" transform="translate(-672.002 504.001)"/>
+        </clipPath>
+        <clipPath id="clip-path-2">
+            <path id="Rectangle_489" d="M0 0H40V34H0z" class="cls-1" transform="translate(-.134 -.368)"/>
+        </clipPath>
+        <clipPath id="clip-path-3">
+            <path id="Path_1347" d="M671-485.221h29.009V-505H671z" class="cls-1" transform="translate(-671 505)"/>
+        </clipPath>
+        <style>
+            .cls-1{fill:#641856}
+        </style>
+    </defs>
+    <g id="Group_1864" clip-path="url(#clip-path)">
+        <g id="Group_1863" transform="translate(-5.958 -8.519)" style="isolation:isolate">
+            <g id="Group_1862" clip-path="url(#clip-path-2)">
+                <g id="Group_1861" clip-path="url(#clip-path-3)" transform="translate(4.637 7.202)">
+                    <path id="Path_1346" d="M667-509h39.557v31.647H667z" class="cls-1" transform="translate(-672.274 503.725)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

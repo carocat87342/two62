@@ -1,0 +1,17 @@
+.vs__dropdown-toggle {
+  border: none !important;
+  color: #050505;
+  input {
+    min-height: max-content !important;
+  }
+  .vs__selected-options {
+    .vs__selected {
+      color: #050505;
+    }
+  }
+
+}
+.vs__dropdown-option--highlight {
+  background: #f51355 !important;
+  color: #fff;
+}

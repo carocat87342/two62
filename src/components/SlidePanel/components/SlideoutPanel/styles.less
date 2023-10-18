@@ -1,0 +1,160 @@
+.slideout-panel-open {
+  overflow: hidden;
+}
+
+.slideout-panel {
+  display: block;
+  transition: opacity 0.15s;
+
+  .slideout-panel-bg {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    transition: opacity 0.3s ease;
+    overflow-y: hidden;
+    z-index: 100;
+
+    &.transparent {
+      background-color: transparent;
+    }
+
+    &.fadeIn-enter {
+      opacity: 0;
+    }
+
+    &.fadeIn-enter-to {
+      opacity: 1;
+    }
+
+    &.fadeIn-leave {
+      opacity: 1;
+    }
+
+    &.fadeIn-leave-to {
+      opacity: 0;
+    }
+
+    &.fadeIn-leave-active {
+      transition-delay: 400ms;
+    }
+  }
+
+  .slideout-wrapper {
+    position: static;
+
+    .slideout {
+      height: 100%;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      background: white;
+      transition: transform 0.18s ease-out;
+      overflow-y: auto;
+      transition-delay: 200ms;
+
+      &.open-on-left {
+        right: auto;
+        left: 0;
+
+        &.slideIn-enter {
+          transform: translateX(-100%);
+        }
+
+        &.slideIn-enter-to {
+          transform: translateX(0);
+        }
+
+        &.slideIn-leave {
+          transform: translateX(0);
+        }
+
+        &.slideIn-leave-to {
+          transform: translateX(-100%);
+        }
+
+        &.slideIn-leave-active {
+          transition-delay: 0;
+        }
+      }
+
+      &.open-on-top {
+        right: 0;
+        left: 0;
+        bottom: auto;
+        top: 0;
+
+        &.slideIn-enter {
+          transform: translateY(-100%);
+        }
+
+        &.slideIn-enter-to {
+          transform: translateY(0);
+        }
+
+        &.slideIn-leave {
+          transform: translateY(0);
+        }
+
+        &.slideIn-leave-to {
+          transform: translateY(-100%);
+        }
+
+        &.slideIn-leave-active {
+          transition-delay: 0;
+        }
+      }
+
+      &.open-on-bottom {
+        right: 0;
+        left: 0;
+        bottom: 0;
+        top: auto;
+
+        &.slideIn-enter {
+          transform: translateY(100%);
+        }
+
+        &.slideIn-enter-to {
+          transform: translateY(0);
+        }
+
+        &.slideIn-leave {
+          transform: translateY(0);
+        }
+
+        &.slideIn-leave-to {
+          transform: translateY(100%);
+        }
+
+        &.slideIn-leave-active {
+          transition-delay: 0;
+        }
+      }
+
+      &.open-on-right {
+        right: 0;
+        left: auto;
+
+        &.slideIn-enter {
+          transform: translateX(100%);
+        }
+
+        &.slideIn-enter-to {
+          transform: translateX(0);
+        }
+
+        &.slideIn-leave {
+          transform: translateX(0);
+        }
+
+        &.slideIn-leave-to {
+          transform: translateX(100%);
+        }
+      }
+    }
+  }
+}

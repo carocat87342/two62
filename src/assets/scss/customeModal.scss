@@ -1,0 +1,347 @@
+@import "./common.scss";
+
+.modal-container {
+    .md-button {
+        font-size: 16px;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.31;
+    }
+}
+
+.modal-header {
+    padding: 40px 40px 0;
+    .maryoku-modal-header {
+        padding: 0 20px;
+        h2 {
+            font-size: 30px;
+            font-family: "Manrope-ExtraBold";
+            font-weight: 800;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.5;
+            letter-spacing: normal;
+            text-align: left;
+            color: #050505;
+            margin: 0px;
+        }
+        .header-description {
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.31;
+            letter-spacing: normal;
+            text-align: left;
+            color: #050505;
+            padding: 10px 0;
+        }
+    }
+}
+
+.modal-footer {
+    padding: 0 60px 40px;
+    .md-button {
+        padding: 0px 40px;
+    }
+}
+
+.modal-container {
+    .md-button {
+        text-transform: unset;
+        font-size: 16px;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.31;
+    }
+}
+
+.modal-body {
+    padding: 40px 40px 40px;
+    .form-group {
+        .md-datepicker {
+            border: solid 0.5px #bcbcbc;
+            border-radius: 3px;
+            input {
+                border: none;
+            }
+            &:before,
+            &:after {
+                display: none;
+            }
+            &.md-field {
+                padding: 10px 0px;
+                margin-top: 0px;
+            }
+            .md-icon {
+                margin: 6px 0px 6px 16px;
+            }
+            .md-clear {
+                display: none;
+            }
+        }
+        .form-control {
+            min-height: 60px;
+            border-radius: 3px;
+            border: solid 0.5px #bcbcbc;
+            background: #ffffff;
+            width: 100%;
+            padding: 0 1.5em;
+            font-size: 15px;
+            color: #050505;
+            font-family: "Manrope-Regular", sans-serif;
+        }
+        &.with-icon {
+            input {
+                position: relative;
+                padding-left: 50px;
+            }
+            .input-icon {
+                position: absolute;
+                left: 20px;
+                top: 15px;
+                z-index: 99999;
+                img {
+                    height: 30px;
+                }
+            }
+        }
+        .md-field {
+            min-height: 60px;
+            border: solid 0.5px #bcbcbc;
+            border-radius: 3px;
+            padding-bottom: 0px;
+            &:before,
+            &:after {
+                display: none;
+            }
+            .md-select {
+                .md-input {
+                    padding-left: 20px;
+                    font-size: 16px;
+                    height: 100%;
+                }
+                .md-icon {
+                    margin-right: 25px;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+    .maryoku-field {
+        .vs__selected {
+            position: absolute;
+            top: 19px;
+            left: 30px;
+            z-index: 2;
+            font-family: "Manrope-Regular", sans-serif;
+            font-size: 17px;
+            color: #050505;
+        }
+        .vs__selected-options input {
+            min-height: 60px;
+            border-radius: 3px;
+            border: solid 0.5px #bcbcbc;
+            background: #ffffff;
+            width: 100%;
+            padding: 0 1.5em;
+            -webkit-appearance: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            font-size: 17px;
+        }
+        .vs__actions {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            z-index: 2;
+            .vs__clear {
+                background: none !important;
+                border: none !important;
+                opacity: 0.3;
+            }
+        }
+        .vs__dropdown-menu {
+            position: absolute;
+            background: #fff !important;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            z-index: 999999 !important;
+            border: 1px solid #aaa;
+            border-radius: 0px;
+            color: #606060;
+            font-size: 16px;
+            font-family: "Manrope-Regular", sans-serif;
+            height: 300px;
+            overflow-y: auto;
+
+            li {
+                padding: 0.8em 1em;
+                &:not(:last-child) {
+                    border-bottom: 1px solid #aaa;
+                }
+                &:hover {
+                    background: #f51355;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &.has-value {
+            background: #fff;
+            border-color: #000 !important;
+
+            .vs__open-indicator {
+                display: none;
+            }
+
+            .md-icon {
+                color: #000;
+            }
+        }
+        &:hover {
+            border-color: #000;
+            > label,
+            .md-icon {
+                color: #000;
+            }
+        }
+    }
+
+    .maryoku-modal-body {
+        text-align: left;
+    }
+}
+
+.delete-timeline-model {
+    .modal-wrapper {
+        .modal-container {
+            max-width: 860px !important;
+        }
+    }
+    .delete-timeline-model__header {
+        width: 100%;
+    }
+}
+
+.edit-event-model {
+    .modal-wrapper {
+        .modal-container {
+            max-width: 900px !important;
+        }
+    }
+    .edit-event-model__header {
+        width: 100%;
+        h2 {
+            font-size: 30px;
+            font-weight: 800;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.53;
+            letter-spacing: normal;
+            text-align: left;
+            color: #050505;
+        }
+    }
+}
+
+.vendor-create-event{
+    .modal-container{
+        max-width: 800px !important;
+    }
+}
+
+.customer-form{
+    max-width: 900px;
+    z-index: 1000;
+    .modal-header{
+        padding: 0;
+    }
+    .modal-footer{
+        padding: 0;
+    }
+}
+
+.negotiation{
+    .modal-header{
+        justify-content: left;
+        background-color: #f3f7fd;
+        padding: 40px;
+    }
+    .modal-footer{
+        padding: 0 40px 30px;
+    }
+}
+
+.negotiation-notification{
+    .modal-body{
+        padding: 0 40px
+    }
+}
+
+.offer-vendors{
+    .modal-header{
+        padding: 0;
+    }
+    .modal-body{
+        padding: 0;
+    }
+    .modal-footer{
+        padding: 0;
+    }
+}
+
+.share-proposal{
+    .modal-container{
+        max-width: 500px;
+    }
+}
+
+.guest-signup{
+    .modal-header{
+        padding: 0;
+    }
+    .modal-body{
+      padding: 0;
+    }
+    .modal-footer{
+        padding: 0;
+    }
+}
+
+.change-event-detail{
+    .modal-footer{
+        justify-content: start;
+    }
+}
+
+.rsvp-modal {
+    .modal-container {
+        max-width: 1000px;
+        .modal-header {
+            padding: 60px 60px 0;
+        }
+        .modal-body {
+            padding: 40px 60px 40px;
+        }
+    }
+}
+
+
+.no-header{
+    .modal-header{
+        padding: 0
+    }
+}
+
+.no-footer{
+    .modal-footer{
+        padding: 0
+    }
+}

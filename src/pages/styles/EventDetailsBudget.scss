@@ -1,0 +1,64 @@
+.event-details-budget {
+  font-family: "Manrope-Regular";
+  color : #050505;
+  padding: 10px 50px;
+  .pdf-content{
+    .card-section {
+      border:solid 1px #a0a0a0;
+    }
+  }
+  .card-overview, .card-activity, .card-expense {
+    .section-header {
+      border-bottom: solid 2px #DBDBDB !important;
+    }
+  }
+  .card-overview {
+    .budget-list__item {
+      padding: 1.5em 0;
+      margin: 1em 0;
+      &:not(:last-child) {
+        border-right: 1px solid #B7B7B7;
+      }
+      .label-title{
+        margin-bottom: 10px;
+        display: inline-block;
+      }
+    }
+    &-saved{
+      font-size: 20px !important;
+      padding:25px 0;
+      &-icon {
+        width: 25px;
+        margin: 0 10px;
+      }
+      &-amount {
+        font-weight: 600;
+        font-size: 30px;
+        padding:0 5px;
+      }
+    }
+  }
+  .card-activity {
+    &-content {
+      padding: 25px 30px 15px;
+    }
+    &-title {
+      font-family: "Manrope-ExtraBold";
+      font-size : 20px;
+      color: #167C3A;
+      line-height: 30px;
+    }
+    &-buttons {
+      padding:0 !important;
+      text-align: right;
+    }
+  }
+  .card-expense {
+    font-size: 18px;
+  }
+  .expand {
+    img {
+      transform: rotate(-90deg);
+    }
+  }
+}

@@ -1,0 +1,359 @@
+@mixin background-icon($url) {
+  background: $url;
+  background-repeat: no-repeat;
+  background-size: 25px 50%;
+  background-position: left;
+  background-position-x: 20px;
+  padding: 0px 20px 0px 50px;
+}
+.maryoku_input {
+  position: relative;
+  input {
+    height: 100%;
+    min-height: 55px;
+    background: #ffffff;
+    border:none;
+    box-shadow: none;
+    width: 100%;
+    padding: 0 1.5em;
+    font-size: 16px;
+    color: #050505;
+    font-family: 'Manrope-Regular',sans-serif;
+    border: solid 0.5px #bcbcbc;
+
+    &.small {
+      min-height: 50px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    &.normal {
+      padding-left: 30px;
+    }
+    &.location {
+      &.active {
+        @include background-icon(url('https://static-maryoku.s3.amazonaws.com/storage/icons/Event%20Page/location-dark.svg'))
+      }
+      @include background-icon(url('https://static-maryoku.s3.amazonaws.com/storage/icons/Event%20Page/location-gray.svg'))
+    }
+    &.budget {
+      &.active {
+        @include background-icon(url('https://static-maryoku.s3.amazonaws.com/storage/icons/Event%20Page/budget-dark.svg'))
+      }
+      @include background-icon(url('https://static-maryoku.s3.amazonaws.com/storage/icons/Event%20Page/budget-gray.svg'))
+    }
+    &.percent {
+      &.active {
+          @include background-icon(url('https://static-maryoku.s3.amazonaws.com/storage/icons/Customer/noun_percentage_3652546.svg'))
+      }
+      @include background-icon(url('https://static-maryoku.s3.amazonaws.com/storage/icons/Customer/noun_percentage_3652546.svg'))
+    }
+    &.phone {
+      &.active {
+        @include background-icon(url('https://static-maryoku.s3.amazonaws.com/storage/icons/Choose+vendor+and+Proposal/phone-dark.svg'))
+      }
+      @include background-icon(url('https://static-maryoku.s3.amazonaws.com/storage/icons/Choose+vendor+and+Proposal/phone-gray.svg'))
+    }
+    &.email {
+      &.active {
+        @include background-icon(url('https://static-maryoku.s3.amazonaws.com/storage/icons/Choose+vendor+and+Proposal/email-dark.svg'))
+      }
+      @include background-icon(url('https://static-maryoku.s3.amazonaws.com/storage/icons/Choose+vendor+and+Proposal/email-gray.svg'))
+    }
+    &.date {
+      &.active {
+        @include background-icon(url('https://static-maryoku.s3.amazonaws.com/storage/icons/Event Page/calendar-dark.svg'))
+      }
+      @include background-icon(url('https://static-maryoku.s3.amazonaws.com/storage/icons/Event Page/calendar-gray.svg'))
+    }
+    &.time {
+      &.active {
+        @include background-icon(url('https://static-maryoku.s3.amazonaws.com/storage/icons/Notes/clock-dark.svg'))
+      }
+      @include background-icon(url('https://static-maryoku.s3.amazonaws.com/storage/icons/Notes/clock-gray.svg'))
+    }
+    &.sharing {
+      &.active {
+        @include background-icon(url('https://static-maryoku.s3.amazonaws.com/storage/icons/Share/link-dark.svg'));
+        padding-right: 60px;
+      }
+      @include background-icon(url('https://static-maryoku.s3.amazonaws.com/storage/icons/Share/link-dark.svg'));
+      padding-right: 60px;
+    }
+    &.password {
+      &.active {
+        @include background-icon(url('https://static-maryoku.s3.amazonaws.com/storage/icons/Signup/password-dark.svg'))
+      }
+      @include background-icon(url('https://static-maryoku.s3.amazonaws.com/storage/icons/Signup/password-gray.svg'));
+      padding-right: 60px;
+    }
+    &.username {
+      &.active {
+        @include background-icon(url('https://static-maryoku.s3.amazonaws.com/storage/icons/Signup/user-dark.svg'))
+      }
+      @include background-icon(url('https://static-maryoku.s3.amazonaws.com/storage/icons/Signup/user-gray.svg'));
+      padding-right: 60px;
+    }
+    &.users {
+      &.active {
+        @include background-icon(url('https://static-maryoku.s3.amazonaws.com/storage/icons/Event%20Page/users-dark.svg'))
+      }
+      @include background-icon(url('https://static-maryoku.s3.amazonaws.com/storage/icons/Event%20Page/users-gray.svg'));
+      padding-right: 60px;
+    }
+    &.company {
+      &.active {
+        @include background-icon(url('https://static-maryoku.s3.amazonaws.com/storage/icons/Signup/company-dark.svg'))
+      }
+      @include background-icon(url('https://static-maryoku.s3.amazonaws.com/storage/icons/Signup/company-gray.svg'));
+      padding-right: 60px;
+    }
+    &:focus{
+      border: solid 0.5px #050505;
+    }
+
+  }
+  input:disabled{
+    color: #a0a0a0;
+    background-color: #EFEFEF;;
+    &.budget {
+      @include background-icon(url('https://static-maryoku.s3.amazonaws.com/storage/icons/Event%20Page/budget-gray.svg'))
+    }
+  }
+  .md-field {
+    margin-top: 0px;
+    &::after, &::before{
+      display: none;
+    }
+    &.location {
+      &.active {
+        input {
+          @include background-icon(url('https://static-maryoku.s3.amazonaws.com/storage/icons/Event%20Page/location-dark.svg'))
+        }
+      }
+      input {
+        @include background-icon(url('https://static-maryoku.s3.amazonaws.com/storage/icons/Event%20Page/location-gray.svg'))
+      }
+
+    }
+    input {
+      border: solid 0.5px #bcbcbc;
+      padding-left: 50px;
+      background-color: white;
+    }
+    .md-input-action {
+      top: 11px;
+      border-radius: 50%;
+      background-color: #FFFFFF !important;
+      right: 15px;
+    }
+  }
+  .copy_clip {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    button {
+      border: none;
+      background: transparent;
+      font-size: 16px;
+      cursor: pointer;
+      color: #f51355;
+      textarea {
+        width: 0;
+      }
+    }
+    &.purple {
+      button {
+        color: #641856;
+      }
+    }
+  }
+}
+
+.upload-section {
+  width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 115px;
+    padding: 15px 20px;
+    border-radius: 3px;
+    border: dashed 1px #f51355;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    .upload-button {
+      border: 1px solid #f51355;
+      text-transform: capitalize;
+      font-weight: bold;
+      color: #f51355 !important;
+      border-radius: 3px;
+      padding: 4px 20px;
+      i {
+        transform: rotate(-90deg);
+      }
+    }
+}
+
+.attchment-item {
+  width: max-content;
+  min-height: 57px;
+  border-radius: 3px;
+  border: solid 1px #f51355;
+  background-color: #ffffff;
+  text-align: center;
+  font-family: "Manrope-Regular";
+  font-size: 16px;
+  color: #f51355;
+  padding:0 20px 0 20px;
+  display: flex;
+  align-items: center;
+  align-content: center;;
+  justify-content: space-between;
+  span {
+    flex-grow: 1;
+  }
+  button {
+    width: 30px;
+    height: 30px;
+    background-color: #f51355;
+    border-radius: 50%;
+    border: none;
+    padding:0px;
+    margin-left: 5px;
+    cursor: pointer;
+    i {
+      color:white !important;
+      font-size: 25px !important;
+    }
+  }
+}
+
+.md-autocomplete-items {
+  .md-list-item-content {
+    &.md-ripple {
+      font-size: 16px !important;
+      font-family: "Manrope-Regular" !important;
+
+    }
+    &.highlight {
+      background-color: #f51355;
+    }
+  }
+}
+
+.maryoku.picker-panel {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  padding: 40px;
+  // min-width: 400px;
+  z-index: 20;
+  box-shadow: 0 3px 25px 0 rgba(0, 0, 0, 0.16);
+  display: none;
+  .picker-content {
+    min-height: 120px;
+  }
+  &.time-picker {
+    img {
+      width: 23px;
+      margin-right: 25px;
+    }
+    .time-select-fields {
+      flex-grow: 1;
+    }
+
+  }
+  .purple {
+    .vfc-calendars-container > .vfc-navigation-buttons div, .vfc-calendars-container .vfc-separately-navigation-buttons div {
+      color: #641856 !important;
+      border-color: #641856 !important;
+    }
+    span.vfc-span-day.vfc-today {
+      color: #641856 !important;
+    }
+    span.vfc-span-day.vfc-today.vfc-marked {
+      color: #ffffff !important;
+    }
+    .vfc-main-container {
+      .vfc-week .vfc-day span.vfc-span-day.vfc-today{
+        background-color: #ae84bb !important;
+      }
+      .vfc-week .vfc-day span.vfc-span-day.vfc-marked {
+        &:not(.vfc-start-marked):not(.vfc-end-marked):before{
+          background-color: #641856!important;
+          border-radius: 50%;
+        }
+      }
+
+      .vfc-day .vfc-base-start, .vfc-base-end{
+        background-color: #641856 !important;
+      }
+      .vfc-underline {
+        color: #050505;
+      }
+    }
+  }
+  .vfc-main-container {
+    box-shadow: none;
+    .vfc-week .vfc-day span.vfc-span-day.vfc-marked {
+      margin: auto;
+      background-color: $red !important;
+      border-radius: 50%;
+      opacity: 1;
+      z-index: 1;
+
+      &:not(.vfc-start-marked):not(.vfc-end-marked):before{
+        background-color: #f51355 !important;
+        border-radius: 50%;
+      }
+    }
+
+    .vfc-day .vfc-base-start, .vfc-base-end{
+      background-color: #f51355 !important;
+    }
+
+    .vfc-span-day.vfc-end-marked {
+      &:before {
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+      }
+    }
+
+    .vfc-underline {
+      color: #050505;
+    }
+
+  }
+}
+.btn-group {
+  text-align: right;
+}
+.time-picker-mask {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+}
+.date-picker {
+  max-width: 400px;
+  min-width: 400px;
+  height: max-content;
+  // position: absolute !important;
+  // max-width: 100%;
+  // margin-top: 55px;
+  &.md-datepicker {
+    margin-top: -55px;
+    opacity: 0;
+  }
+}

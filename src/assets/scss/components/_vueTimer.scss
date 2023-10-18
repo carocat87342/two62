@@ -1,0 +1,14 @@
+.vue__time-picker {
+  .dropdown {
+    top: 100% !important;
+    z-index: 10 !important;
+  }
+  &.red {
+    .dropdown ul li:not([disabled]).active, 
+    .vue__time-picker .dropdown ul li:not([disabled]).active:hover, 
+    .vue__time-picker .dropdown ul li:not([disabled]).active:focus {
+      background: #F51355 !important;
+      color: #fff;
+    }
+  }
+}

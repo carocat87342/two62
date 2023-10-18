@@ -1,0 +1,7 @@
+On my local, it looks like I have to setup backend on my local also. When I try on the dev server, login API return success but don't go to next page
+
+1. Make new branch from master branch.
+2. Pull code from development branch (every day before you start the work).
+3. Commit and push your update to your new branch
+4. Make PR from your branch to development branch (after finish your work every day).
+5. @Michael will merge your changes to development branch and can test it in the staging site.

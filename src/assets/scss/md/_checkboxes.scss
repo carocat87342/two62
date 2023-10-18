@@ -1,0 +1,99 @@
+.md-checkbox{
+  .md-checkbox-container{
+    width: 27px;
+    min-width: 27px;
+    height: 27px;
+    border: 1px solid rgba(0, 0, 0, .54);
+    border-radius: 3px;
+    box-sizing: border-box;
+    .md-ripple{
+      overflow: hidden;
+    }
+  }
+  &.md-theme-default.md-checkbox-narrow {
+    margin: 0 16px 0 0 !important;
+  }
+  &.md-theme-default.md-checkbox-circle {
+    .md-checkbox-container{
+      border-radius: 50%;
+    }
+    &.md-checked  .md-checkbox-container{
+      background-color: #2cde6b !important;
+      border-color: #2cde6b !important;
+
+      &:after {
+        border-color: white !important;
+      }
+    }
+    &.md-red.md-checked  .md-checkbox-container{
+      background-color: #f51355 !important;
+      border-color: #f51355 !important;
+      &:after {
+        border-color: white !important;
+      }
+    }
+    &.md-vendor.md-checked  .md-checkbox-container{
+      background-color: $vendorColor !important;
+      border-color: $vendorColor !important;
+      &:after {
+          border-color: white !important;
+      }
+    }
+  }
+
+  &.md-checked .md-checkbox-container{
+    border: 3px solid #fc1355 !important;
+    &:after{
+      // border-color: $brand-primary !important;
+      border-width: 3px;
+      border-color: #fc1355 !important;
+      top: 2px;
+      left: 6px;
+      width: 8px;
+      height: 13px;
+    }
+  }
+  &.md-checked.md-vendor .md-checkbox-container {
+    border: 3px solid $vendorColor !important;
+    &:after{
+      // border-color: $brand-primary !important;
+      border-color: $vendorColor !important;
+    }
+  }
+
+  .md-checkbox-label{
+    font-weight: 400;
+    color: #aaa;
+    padding-left: 10px;
+  }
+  &.md-checked {
+    .md-checkbox-label{
+      font-weight: 600;
+    }
+  }
+
+  &.md-theme-default.md-checked .md-checkbox-container{
+    background-color: transparent !important;
+    border-color: inherit;
+  }
+
+  &.md-theme-default.md-checked .md-ripple{
+    color: inherit;
+  }
+
+  &.md-disabled .md-checkbox-label,
+  &.md-disabled .md-checkbox-container{
+    opacity: .26;
+    border-color: rgba(0, 0, 0, .54) !important;
+  }
+
+  &.md-checked.md-disabled .md-checkbox-container{
+    background-color: transparent !important;
+    border-color: rgba(0, 0, 0, .54) !important;
+    opacity: .26;
+
+    &:after{
+      border-color: rgba(0, 0, 0, .54) !important;
+    }
+  }
+}

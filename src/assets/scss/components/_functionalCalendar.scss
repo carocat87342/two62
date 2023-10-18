@@ -1,0 +1,186 @@
+.vfc-main-container {
+  width: max-content;
+  box-shadow: none !important;
+  margin:auto;
+}
+.vfc-week .vfc-day span.vfc-span-day.vfc-marked {
+  margin: auto;
+  background-color: $red !important;
+  border-radius: 50%;
+  opacity: 1;
+  z-index: 1;
+}
+.vfc-calendars-container {
+  & > .vfc-navigation-buttons div, .vfc-separately-navigation-buttons div {
+    color: #f51355 !important;
+    margin: 10px 20px !important;
+    border-color: #f51355 !important;
+  }
+}
+
+.vfc-week .vfc-day span.vfc-span-day {
+  font-family: "Manrope-Regular";
+  font-size: 14px;
+}
+.vfc-week .vfc-day span.vfc-span-day.vfc-today {
+  background-color: #ffd9e4 !important;
+  color: #f51355;
+  // font-family: "Manrope-Bold";
+  font-weight: bold;
+}
+.vfc-week .vfc-day span.vfc-span-day.vfc-today.vfc-marked {
+  color: white !important;
+}
+.vfc-top-date a.vfc-underline {
+  font-family: "Manrope-Bold";
+  font-size: 16px;
+  text-decoration: none !important;
+}
+.vfc-dayNames {
+  padding-bottom: 5px;
+  border-bottom: solid #DDDDDD 1px;
+  span {
+  font-family: "Manrope-Bold";
+  font-size: 14px;
+  color: #a0a0a0 !important;
+}}
+.vfc-calendar{
+  max-width: 100%;
+  .vfc-content {
+    max-width: 100%;
+    margin-bottom: 0px;
+  }
+  .vfc-arrow-left, .vfc-arrow-right {
+    border-color: #fff;
+  }
+}
+
+.vfc-months-container .vfc-content {
+  width: 330px;
+  margin: auto;
+}
+
+.vfc-space-between {
+  margin-top: 10px !important;
+}
+.vfc-separately-navigation-buttons {
+  margin-bottom: -60px !important;
+}
+.vfc-separately-navigation-buttons div {
+  // margin: 20px 50px !important;
+}
+.vfc-navigation-buttons div .vfc-arrow-left,
+.vfc-separately-navigation-buttons div .vfc-arrow-left {
+  width: 11px !important;
+  height: 11px !important;
+  border-top: 3px solid !important;
+  border-left: 3px solid !important;
+  border-radius: 1px;
+}
+.vfc-navigation-buttons div .vfc-arrow-right,
+.vfc-separately-navigation-buttons div .vfc-arrow-right {
+  width: 11px !important;
+  height: 11px !important;
+  border-top: 3px solid !important;
+  border-right: 3px solid !important;
+  border-radius: 1px;
+}
+span.vfc-span-day {
+  color: #43425d !important;
+  width: 40px !important;
+  line-height: 40px !important;
+  &.vfc-today {
+    color: #f51355 !important;
+  }
+}
+.vfc-day .vfc-base-start, .vfc-base-end {
+  background-color: #f51355 !important;
+}
+span.vfc-span-day.vfc-marked,
+.vfc-today.vfc-marked {
+  color: white !important;
+
+  &:not(.vfc-start-marked):not(.vfc-end-marked):before {
+    background-color: #f51355 !important;
+    border-radius: unset;
+  }
+}
+span.vfc-span-day.vfc-hide {
+  color: white !important;
+}
+.picker-panel {
+  display: block;
+  position: relative;
+  padding: 20px;
+  border: solid 1px #bec0c2;
+  border-radius: 3px;
+}
+.vfc-top-date a.vfc-underline {
+  color: #050505 !important;
+}
+
+.vfc-week .vfc-day span.vfc-span-day.vfc-disabled {
+  color: rgba(0, 0, 0, 0.2) !important;
+}
+.vfc-top-date {
+  margin: 15px;
+}
+.vendor-calendar{
+   display: flex;
+   justify-content: center;
+  .vfc-main-container{
+
+    .vfc-separately-navigation-buttons div{
+        color: $vendorColor !important;
+        border-color: $vendorColor !important;
+
+        &.vfc-cursor-pointer{
+            margin: -20px 30px 20px 30px !important;
+        }
+    }
+  }
+  .vfc-top-date {
+      margin-top: 13px!important;
+      a{
+          color: black !important;
+          font-family: "Manrope-Bold";
+          font-weight: 700!important;
+      }
+  }
+
+  .vfc-week .vfc-day span.vfc-span-day.vfc-marked {
+    margin: auto;
+    background-color: $vendorColor !important;
+    border-radius: 50%;
+    opacity: 1;
+    z-index: 1;
+  }
+
+  span.vfc-span-day{
+      background-color: white !important;
+      &.vfc-today{
+          color: $vendorColor !important;
+          background-color: white !important;
+          font-family: "Manrope-Bold";
+          box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.15);
+      }
+  }
+  .vfc-day .vfc-base-start, .vfc-base-end {
+    background-color: $vendorColor !important;
+  }
+
+  span.vfc-span-day.vfc-marked,  .vfc-today.vfc-marked {
+    color: white !important;
+
+    &:not(.vfc-start-marked):not(.vfc-end-marked):before {
+        background-color: $vendorColor !important;
+    }
+  }
+  .vfc-cursor-pointer {
+      z-index: 30 !important;
+  }
+  .vfc-content{
+      z-index: 20 !important;
+  }
+}
+
